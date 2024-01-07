@@ -22,7 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Middleware to parse URL-encoded data
 
 app.get("/", function (req, res) {
-  res.sendFile(__dirname+"/index.html")
+  res.sendFile(__dirname+"/views/index.html")
 });
 
 app.post("/register", async function (req, res) {
