@@ -14,7 +14,7 @@ app.use(cors())
 // Middleware to parse URL-encoded data
 
 app.get("/", function (req, res) {
-  res.sendFile(__dirname+"./index.html")
+  res.sendFile(__dirname+"/index.html")
 });
 
 app.post("/register", async function (req, res) {
@@ -31,7 +31,7 @@ app.post("/register", async function (req, res) {
     // Save the data to the database
     const savedData = await data.save();
 
-    res.sendFile(__dirname+"/index.html");
+    res.sendFile(__dirname+"/success.html");
 
     // res.status(201).json(savedData); // Send a JSON response with the saved data
   } catch (error) {
