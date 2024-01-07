@@ -14,7 +14,7 @@ app.use(cors())
 // Middleware to parse URL-encoded data
 
 app.get("/", function (req, res) {
-  res.send("running");
+  res.sendFile(__dirname+"./index.html")
 });
 
 app.post("/register", async function (req, res) {
