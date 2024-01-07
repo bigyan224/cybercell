@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+box-sizing:border-box;
+font-family: monospace;
+scroll-behavior: smooth;
+}
+ 
+html,body{
+height:100%;
+width:100%;
+}
+#falling-code {
+    position: absolute;
+    color: rgb(0, 255, 0);
+    font-size: 20px;
+    pointer-events: none; /* Allow clicks to pass through falling text */
+
+}
+@keyframes fall {
+    to {
+        transform: translateY(calc(100vh + 10px));
+    }
+}
