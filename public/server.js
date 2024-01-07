@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const router = express.Router();
-const userModel = require("./models/user");
+const userModel = require("../models/user");
 var http = require('http');
 var path=require("path")
 const bodyParser = require('body-parser');
